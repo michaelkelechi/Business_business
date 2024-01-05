@@ -1,0 +1,153 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; /* Updated to column layout for better spacing */
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Beautiful Button Styles */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #4caf50;
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* Priority selection section */
+#prioritySection {
+    margin-top: 10px;
+}
+
+#prioritySelect {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add additional styling for priority levels */
+#prioritySelect option[value="low"] {
+    color: #5bc0de; /* Blue color for low priority */
+}
+
+#prioritySelect option[value="medium"] {
+    color: #f0ad4e; /* Orange color for medium priority */
+}
+
+#prioritySelect option[value="high"] {
+    color: #d9534f; /* Red color for high priority */
+}
+#filterSearch {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#filterSelect,
+#filterInput {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add additional styling for a clean and visually appealing design */
+/* 
+.task-list div {
+    transition: background-color 0.3s ease;
+}
+
+.task-list div:hover {
+    background-color: #dff0d8;
+} */
+
+
+.task-list div {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list div.completed {
+    background-color: #dff0d8;
+    text-decoration: line-through;
+}
+
+.task-list div:hover {
+    background-color: #e6e6e6;
+}
+
+/* 9. Animations (Optional): Add subtle animations to enhance the user experience */
+.task-list div {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-list div:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.02);
+}
+
+form:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List App</title>
+</head>
+<body>
+    <!-- Task list section -->
+    <div class="task-list" id="taskList">
+        <!-- Tasks will be dynamically added here -->
+    </div>
+
+    <!-- Input form section -->
+    <form id="taskForm">
+        <label for="taskInput">Task:</label>
+        <input type="text" id="taskInput" required>
+        <label for="datePicker">Deadline:</label>
+        <input type="date" id="datePicker">
+        <label for="prioritySelect">Priority:</label>
+        <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button type="button" id="addTaskBtn">Add Task</button>
+    </form>
+
+    <!-- Filter and search section -->
+    <div id="filterSearch">
+        <label for="filterSelect">Filter:</label>
+        <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+        </select>
+
+        <label for="filterInput">Search:</label>
+        <input type="text" id="filterInput" placeholder="Search tasks">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
